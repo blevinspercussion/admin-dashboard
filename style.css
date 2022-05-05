@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 2fr 5fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 8fr;
 }
 
 .header {
@@ -12,6 +12,35 @@
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    background-color: #a855f7;
+    color: white;
 }
 
 .content {}
+
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+}
+
+.icon {
+    height: 20px;
+
+}
+
+ul {
+    margin-bottom: 35px;
+}
+
+li {
+    padding: 10px;
+    list-style: none;
+    font-size: x-large;
+}
+
+#dashboard-text {
+    margin-left: 35px;
+    margin-top: 35px;
+}
