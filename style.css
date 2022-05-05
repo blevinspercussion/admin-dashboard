@@ -73,6 +73,7 @@ input {
 
 .profile-pic {
     height: 35px;
+    margin-top: 10px;
     border-radius: 50px;
     justify-self: center;
     align-self: baseline;
