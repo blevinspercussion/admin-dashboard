@@ -1,131 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada&display=swap"
+      rel="stylesheet"
+    />
     <title>Project: Admin Dashboard</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            <div class="top-bar">
-                <img class="icon" src="./svg/Favorites/icons8-search-50.png" alt="">
-                <input type="text">
-                <img class="icon" src="./svg/Favorites/icons8-notification-50.png" alt="">
-                <img class="profile-pic" src="./images/green_drumlites.jpg" alt="profile picture">
-                <h2>Adam Blevins</h2>
-            </div>
-            <div class="second-bar">
-                <img class="profile-pic large-pic" src="./images/green_drumlites.jpg" alt="">
-                <h4 class="greeting">Hello,</h4>
-                <h2 class="user-name">Adam Blevins (@ablevins)</h2>
-                <div class="btn-div">
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
-            </div>
-                
+      <div class="header">
+        <div class="top-bar">
+          <img class="icon" src="./svg/Favorites/icons8-search-50.png" alt="" />
+          <input type="text" />
+          <img
+            class="icon"
+            src="./svg/Favorites/icons8-notification-50.png"
+            alt=""
+          />
+          <img
+            class="profile-pic"
+            src="./images/green_drumlites.jpg"
+            alt="profile picture"
+          />
+          <h2>Adam Blevins</h2>
         </div>
-
-        <div class="sidebar" >
-            <div class="list-item" id="dashboard-text">
-                <img src="./svg/icons8-square-30.png" alt="logo">
-                <h1>Dashboard</h1>
-            </div>
-            <ul>
-                <div class="list-item">
-                    <img class="icon" src="./svg/Favorites/icons8-home-50.png" alt="home icon"><li>Home</li>
-                </div>
-                <div class="list-item">
-                    <img class="icon" src="./svg/Favorites/icons8-user-50.png" alt="profile icon"><li>Profile</li>
-                </div>
-                <div class="list-item">
-                    <img class="icon" src="./svg/Favorites/icons8-messaging-50.png" alt="messages icon"><li>Messages</li>
-                </div>
-                <div class="list-item">
-                    <img class="icon" src="./svg/Favorites/icons8-time-machine-50.png" alt="history icon"><li>History</li>
-                </div>
-                <div class="list-item">
-                    <img class="icon" src="./svg/Favorites/icons8-todo-list-50.png" alt="tasks icon"><li>Tasks</li>
-                </div>
-                <div class="list-item">
-                    <img class="icon" src="./svg/Favorites/icons8-user-account-50.png" alt="communities icon"><li>Communities</li>
-                </div>
-
-            </ul>
-
-            <ul>
-                <div class="list-item">
-                    <img class="icon" src="./svg/Favorites/icons8-services-50.png" alt="settings icon"><li>Settings</li>
-                </div>
-                <div class="list-item">
-                    <img class="icon" src="./svg/Favorites/icons8-question-mark-50.png" alt="support icon"><li>Support</li>
-                </div>
-                <div class="list-item">
-                    <img class="icon" src="./svg/Favorites/icons8-privacy-50.png" alt="privacy icon"><li>Privacy</li>
-                </div>
-            </ul>
+        <div class="second-bar">
+          <img
+            class="profile-pic large-pic"
+            src="./images/green_drumlites.jpg"
+            alt=""
+          />
+          <h4 class="greeting">Hello,</h4>
+          <h2 class="user-name">Adam Blevins (@ablevins)</h2>
+          <div class="btn-div">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
         </div>
+      </div>
 
-        <div class="content">
-            <div class="content-header">
-                <h3 id="your-projects">Your Projects</h3>
-                <div></div>
-                <div id="announcements">
-                    <h3>Announcements</h3>
-                    <div class="announcements-card">
-                        <h4>Site Maintenance</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, in pariatur. Voluptatem fugiat atque... </p>
-                        <hr>
-                        <h4>Community Share Day</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint culpa repellat hic minima soluta tenetur...</p>
-                        <hr>
-                        <h4>Updated Privacy Policy</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia aperiam similique reprehenderit necessitatibus magnam dolorum...</p>                                               
-                    </div>
-                    <h3>Trending</h3>
-                    <div class="trending-card">
-                        <img style="width: 36px" class="profile-pic trending" src="./images/mis.jpg" alt="drummer performing">
-                        <div class="trending-text">
-                            <h4>@tegan</h4>
-                            <p>World Peace Builder</p>
-                        </div>
-
-                        <img style="width: 36px" class="profile-pic trending" src="./images/red_light.jpg" alt="drummer performing">
-                        <div class="trending-text">
-                            <h4>@morgan</h4>
-                            <p>Super Cool Project</p>
-                        </div>
-
-                        <img style="width: 36px" class="profile-pic trending" src="./images/rocknrodeo.jpg" alt="drummer performing">
-                        <div class="trending-text">
-                            <h4>@kendall</h4>
-                            <p>Life Changing App</p>
-                        </div>
-
-                        <img style="width: 36px" class="profile-pic trending" src="./images/twirl.jpg" alt="drummer performing">
-                        <div class="trending-text">
-                            <h4>@alex</h4>
-                            <p>No Traffic Maker</p>
-                        </div>
-
-                        
-                    </div>
-                </div>
-                <div class="content-main">
-            </div>
-
-
-            </div>
+      <div class="sidebar">
+        <div class="list-item" id="dashboard-text">
+          <img src="./svg/icons8-square-30.png" alt="logo" />
+          <h1>Dashboard</h1>
         </div>
+        <ul>
+          <div class="list-item">
+            <img
+              class="icon"
+              src="./svg/Favorites/icons8-home-50.png"
+              alt="home icon"
+            />
+            <li>Home</li>
+          </div>
+          <div class="list-item">
+            <img
+              class="icon"
+              src="./svg/Favorites/icons8-user-50.png"
+              alt="profile icon"
+            />
+            <li>Profile</li>
+          </div>
+          <div class="list-item">
+            <img
+              class="icon"
+              src="./svg/Favorites/icons8-messaging-50.png"
+              alt="messages icon"
+            />
+            <li>Messages</li>
+          </div>
+          <div class="list-item">
+            <img
+              class="icon"
+              src="./svg/Favorites/icons8-time-machine-50.png"
+              alt="history icon"
+            />
+            <li>History</li>
+          </div>
+          <div class="list-item">
+            <img
+              class="icon"
+              src="./svg/Favorites/icons8-todo-list-50.png"
+              alt="tasks icon"
+            />
+            <li>Tasks</li>
+          </div>
+          <div class="list-item">
+            <img
+              class="icon"
+              src="./svg/Favorites/icons8-user-account-50.png"
+              alt="communities icon"
+            />
+            <li>Communities</li>
+          </div>
+        </ul>
+
+        <ul>
+          <div class="list-item">
+            <img
+              class="icon"
+              src="./svg/Favorites/icons8-services-50.png"
+              alt="settings icon"
+            />
+            <li>Settings</li>
+          </div>
+          <div class="list-item">
+            <img
+              class="icon"
+              src="./svg/Favorites/icons8-question-mark-50.png"
+              alt="support icon"
+            />
+            <li>Support</li>
+          </div>
+          <div class="list-item">
+            <img
+              class="icon"
+              src="./svg/Favorites/icons8-privacy-50.png"
+              alt="privacy icon"
+            />
+            <li>Privacy</li>
+          </div>
+        </ul>
+      </div>
+
+      <div class="content">
+        <div class="content-header">
+          <h3 id="your-projects">Your Projects</h3>
+          <div id="project-cards">
+            <div class="project-card">
+              <h3>Super Cool Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                accusantium perspiciatis magnam ab unde minus?
+              </p>
+              <div class="project-card-icons">
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-add-to-favorites-30.png"
+                  alt="star icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-eye-30.png"
+                  alt="eye icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-square-30.png"
+                  alt="square icon"
+                />
+              </div>
+            </div>
+            <div class="project-card">
+              <h3>Less Cool Project</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                animi sunt architecto quas rem iusto commodi laudantium libero,
+                laboriosam consequatur facilis nihil expedita est minima.
+              </p>
+              <div class="project-card-icons">
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-add-to-favorites-30.png"
+                  alt="star icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-eye-30.png"
+                  alt="eye icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-square-30.png"
+                  alt="square icon"
+                />
+              </div>
+            </div>
+            <div class="project-card">
+              <h3>Impossible App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                accusantium perspiciatis magnam ab unde minus?
+              </p>
+              <div class="project-card-icons">
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-add-to-favorites-30.png"
+                  alt="star icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-eye-30.png"
+                  alt="eye icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-square-30.png"
+                  alt="square icon"
+                />
+              </div>
+            </div>
+            <div class="project-card">
+              <h3>Easy Peasy App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                animi sunt architecto quas rem iusto commodi laudantium libero,
+                laboriosam consequatur facilis nihil expedita est minima.
+              </p>
+              <div class="project-card-icons">
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-add-to-favorites-30.png"
+                  alt="star icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-eye-30.png"
+                  alt="eye icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-square-30.png"
+                  alt="square icon"
+                />
+              </div>
+            </div>
+            <div class="project-card">
+              <h3>Ad Blocker</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                accusantium perspiciatis magnam ab unde minus?
+              </p>
+              <div class="project-card-icons">
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-add-to-favorites-30.png"
+                  alt="star icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-eye-30.png"
+                  alt="eye icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-square-30.png"
+                  alt="square icon"
+                />
+              </div>
+            </div>
+            <div class="project-card">
+              <h3>Money Maker</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                animi sunt architecto quas rem iusto commodi laudantium libero,
+                laboriosam consequatur facilis nihil expedita est minima.
+              </p>
+              <div class="project-card-icons">
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-add-to-favorites-30.png"
+                  alt="star icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-eye-30.png"
+                  alt="eye icon"
+                />
+                <img
+                  class="large-icon"
+                  src="./svg/icons8-square-30.png"
+                  alt="square icon"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="announcements">
+            <h3>Announcements</h3>
+            <div class="announcements-card">
+              <h4>Site Maintenance</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                in pariatur. Voluptatem fugiat atque...
+              </p>
+              <hr />
+              <h4>Community Share Day</h4>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint
+                culpa repellat hic minima soluta tenetur...
+              </p>
+              <hr />
+              <h4>Updated Privacy Policy</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Mollitia aperiam similique reprehenderit necessitatibus magnam
+                dolorum...
+              </p>
+            </div>
+            <h3>Trending</h3>
+            <div class="trending-card">
+              <img
+                style="width: 36px"
+                class="profile-pic trending"
+                src="./images/mis.jpg"
+                alt="drummer performing"
+              />
+              <div class="trending-text">
+                <h4>@tegan</h4>
+                <p>World Peace Builder</p>
+              </div>
+
+              <img
+                style="width: 36px"
+                class="profile-pic trending"
+                src="./images/red_light.jpg"
+                alt="drummer performing"
+              />
+              <div class="trending-text">
+                <h4>@morgan</h4>
+                <p>Super Cool Project</p>
+              </div>
+
+              <img
+                style="width: 36px"
+                class="profile-pic trending"
+                src="./images/rocknrodeo.jpg"
+                alt="drummer performing"
+              />
+              <div class="trending-text">
+                <h4>@kendall</h4>
+                <p>Life Changing App</p>
+              </div>
+
+              <img
+                style="width: 36px"
+                class="profile-pic trending"
+                src="./images/twirl.jpg"
+                alt="drummer performing"
+              />
+              <div class="trending-text">
+                <h4>@alex</h4>
+                <p>No Traffic Maker</p>
+              </div>
+            </div>
+          </div>
+          <div class="content-main"></div>
+        </div>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
